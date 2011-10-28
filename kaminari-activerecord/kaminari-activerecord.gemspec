@@ -1,5 +1,5 @@
 # -*- encoding: utf-8 -*-
-$:.push File.expand_path("../../kaminari-core/lib", __FILE__)
+$:.push File.expand_path("../../kaminari/lib", __FILE__)
 require "kaminari/version"
 
 Gem::Specification.new do |s|
@@ -21,7 +21,7 @@ Gem::Specification.new do |s|
 
   s.licenses = ['MIT']
 
-  s.add_dependency 'kaminari-core'
+  s.add_dependency 'kaminari'
   s.add_dependency 'activerecord', ['>= 3.0.0']
   s.add_development_dependency 'bundler', ['>= 1.0.0']
   s.add_development_dependency 'sqlite3', ['>= 0']

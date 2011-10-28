@@ -3,7 +3,7 @@ $:.push File.expand_path("../lib", __FILE__)
 require "kaminari/version"
 
 Gem::Specification.new do |s|
-  s.name        = 'kaminari-core'
+  s.name        = 'kaminari'
   s.version     = Kaminari::VERSION
   s.platform    = Gem::Platform::RUBY
   s.authors     = ['Akira Matsuda']
@@ -21,7 +21,7 @@ Gem::Specification.new do |s|
 
   s.licenses = ['MIT']
 
-  s.add_dependency 'activeview', ['>= 3.0.0']
+  s.add_dependency 'actionpack', ['>= 3.0.0']
   s.add_dependency 'activesupport', ['>= 3.0.0']
   s.add_development_dependency 'bundler', ['>= 1.0.0']
   s.add_development_dependency 'rspec', ['>= 0']
