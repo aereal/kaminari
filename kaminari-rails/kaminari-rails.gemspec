@@ -1,9 +1,9 @@
 # -*- encoding: utf-8 -*-
-$:.push File.expand_path("../lib", __FILE__)
+$:.push File.expand_path("../../kaminari-core/lib", __FILE__)
 require "kaminari/version"
 
 Gem::Specification.new do |s|
-  s.name        = 'kaminari-core'
+  s.name        = 'kaminari-rails'
   s.version     = Kaminari::VERSION
   s.platform    = Gem::Platform::RUBY
   s.authors     = ['Akira Matsuda']
@@ -21,11 +21,14 @@ Gem::Specification.new do |s|
 
   s.licenses = ['MIT']
 
-  s.add_dependency 'activeview', ['>= 3.0.0']
-  s.add_dependency 'activesupport', ['>= 3.0.0']
+  s.add_dependency 'kaminari-core'
+  s.add_dependency 'railties', ['>= 3.0.0']
   s.add_development_dependency 'bundler', ['>= 1.0.0']
+  s.add_development_dependency 'sqlite3', ['>= 0']
   s.add_development_dependency 'rspec', ['>= 0']
+  s.add_development_dependency 'rspec-rails', ['>= 0']
   s.add_development_dependency 'rr', ['>= 0']
   s.add_development_dependency 'steak', ['>= 0']
   s.add_development_dependency 'capybara', ['>= 0']
+  s.add_development_dependency 'database_cleaner', ['>= 0']
 end
